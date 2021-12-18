@@ -47,7 +47,7 @@ window.addEventListener("scroll", function () {
 var a;
 
 function show() {
-    if (a == 1) {
+    if (a === 1) {
         document.getElementById("modal").style.display = "block";
     } else {
         document.getElementById("modal").style.display = "none"
@@ -58,7 +58,7 @@ function show() {
 var b;
 
 function hide() {
-    if (a == 1) {
+    if (a === 1) {
         document.getElementById("modal").style.display = "none";
     } else {
         document.getElementById("modal").style.display = "block"
@@ -68,43 +68,49 @@ function hide() {
 
 // Next/previous controls 
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides();
 
 // Next/previous controls
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    slideIndex += n
+    showSlides();
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    slideIndex = n
+    showSlides();
 }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
+function showSlides() {
+
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (slideIndex > slides.length) {
         slideIndex = 1
     }
-    if (n < 1) {
-        slideIndex = slides.length
+    if (slideIndex < 1) {
+        slideIndex = slides.length - 1
     }
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
+    for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
+
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+    slideIndex++;
+    setTimeout(showSlides, 3000);
 }
 
+
 //Ham xu li kho anh phan Trai Nghiẹm
-var n=document.getElementsByClassName("experience-img-slider");
+var n = document.getElementsByClassName("experience-img-slider");
 
 function checkImageStore(n) {
-    for (var i=0;i<n;i++){
+    for (var i = 0; i < n; i++) {
 
     }
 }
