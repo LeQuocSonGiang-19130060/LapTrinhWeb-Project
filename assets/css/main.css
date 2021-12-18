@@ -400,7 +400,11 @@
     box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
 }
-
+.buy-info-item h6{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 0;
+}
 .buy-item-name {
     font-size: 2rem;
     color: var(--primary-color);
@@ -1014,7 +1018,7 @@
 }
 
 .about-company-comment-content {
-    display: inline-flex;
+    display: flex;
 }
 
 .comment-content-img {
@@ -1845,7 +1849,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #999;
+    background-color: rgb(204, 204, 204);
     border-radius: 6px;
 }
 
