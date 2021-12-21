@@ -1,6 +1,3 @@
-'use strict'
-
-
 // NÚT QUAY VỀ ĐẦU TRANG
 window.onscroll = function () {
     scrollFunction()
@@ -55,7 +52,6 @@ function show() {
     }
 }
 
-var b;
 
 function hide() {
     if (a === 1) {
@@ -66,8 +62,9 @@ function hide() {
     }
 }
 
-// Next/previous controls 
-var slideIndex = 1;
+
+// Next/previous controls
+let slideIndex = 1
 showSlides();
 
 // Next/previous controls
@@ -78,8 +75,7 @@ function plusSlides(n) {
 
 // Thumbnail image controls
 function currentSlide(n) {
-    slideIndex = n
-    showSlides();
+    showSlides(slideIndex = n);
 }
 
 function showSlides() {
@@ -90,7 +86,7 @@ function showSlides() {
         slideIndex = 1
     }
     if (slideIndex < 1) {
-        slideIndex = slides.length - 1
+        slideIndex = slides.length
     }
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -98,19 +94,8 @@ function showSlides() {
     for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    slideIndex++;
-    setTimeout(showSlides, 3000);
-}
-
-
-//Ham xu li kho anh phan Trai Nghiẹm
-var n = document.getElementsByClassName("experience-img-slider");
-
-function checkImageStore(n) {
-    for (var i = 0; i < n; i++) {
-
-    }
+    console.log(slideIndex)
+    slideIndex++
 }
