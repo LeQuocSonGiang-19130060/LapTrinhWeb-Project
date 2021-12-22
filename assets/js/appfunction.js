@@ -65,7 +65,7 @@ function hide() {
 
 // Next/previous controls
 let slideIndex = 1
-showSlides();
+
 
 // Next/previous controls
 function plusSlides(n) {
@@ -99,3 +99,14 @@ function showSlides() {
     console.log(slideIndex)
     slideIndex++
 }
+
+
+$(document).ready(function () {
+    $(".navbar-btn").click(function () {
+        $(".header__navbar-mobile").show();
+    });
+    $(".ti-close").click(function () {
+        $(".header__navbar-mobile").hide();
+    });
+});
+

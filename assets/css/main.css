@@ -15,8 +15,13 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
+ .header.sticky{
+    height: 50px;
+}
+
 .sticky .header__info {
     padding-top: 5px;
+    display: none;
 }
 
 .sticky .header__info-list {
@@ -89,7 +94,10 @@
     height: 40px;
     line-height: 1rem;
 }
-
+.header__navbar > a{
+    position: relative;
+    top: 10px;
+}
 .navbar__logo-img {
     height: 35px;
     padding-left: 8rem;
@@ -1014,7 +1022,12 @@
 }
 
 .about-company-comment-content {
-    display: inline-flex;
+    display: flex;
+
+}
+
+.about-company-comment-content.l-6 {
+    display: flex;
 }
 
 .comment-content-img {
@@ -1819,7 +1832,6 @@
     bottom: 30px;
     right: 20px;
     z-index: 99;
-    border: none;
     outline: none;
     border: 2px solid var(--primary-color);
     background-color: var(--primary-color);

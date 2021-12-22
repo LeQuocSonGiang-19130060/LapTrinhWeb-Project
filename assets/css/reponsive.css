@@ -57,6 +57,19 @@
     height: 400px;
   }
 }
+
+@media (max-width: 950px) {
+  .navbar-list{
+    display: none;
+  }
+  .header__info{
+    display: none;
+  }
+  .header{
+    height: 60px;
+  }
+}
+
 @media (max-width: 770px) {
   .buy-item-price{
     right: 0;
