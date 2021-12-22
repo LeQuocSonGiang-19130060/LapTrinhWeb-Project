@@ -98,5 +98,13 @@
     height: auto;
     padding: 20px;
   }
-  
+  .select{
+    flex-direction: column;
+  }
+  .select-option{
+    margin: 10px 0;
+  }
+  .select button{
+    width: 200px;
+  }
 }

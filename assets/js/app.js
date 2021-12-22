@@ -108,3 +108,9 @@ function checkImageStore(n) {
 
     }
 }
+let sidebar = document.querySelector(".side-bar");
+let sidebarBtn = document.querySelector(".side-btn");
+
+sidebarBtn.onclick = function(){
+     sidebar.classList.toggle("active");
+} 
