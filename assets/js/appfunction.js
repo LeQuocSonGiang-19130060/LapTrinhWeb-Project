@@ -39,7 +39,7 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 0);
 })
 
-
+// SLIDER BAR PR
 // HIDE AND SHOW FORM LOGIN
 var a;
 

@@ -56,6 +56,9 @@
     margin-left: 0;
     height: 400px;
   }
+  .confirm-catalog{
+    margin: 20px 0;
+  }
 }
 
 @media (max-width: 950px) {
@@ -67,6 +70,9 @@
   }
   .header{
     height: 60px;
+  }
+  #sg-book-room{
+    margin: 20px 0;
   }
 }
 
@@ -120,4 +126,5 @@
   .select button{
     width: 200px;
   }
+
 }

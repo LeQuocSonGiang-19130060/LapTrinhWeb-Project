@@ -409,8 +409,6 @@
     border-radius: 5px;
     outline: none;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-
-
 }
 .select-option option{
     font-size: 1.3rem;
@@ -425,6 +423,7 @@
     color: var(--white-color);
     border-radius: 5px;
 }
+
 .num-page{
     display: flex;
     align-items: center;
@@ -1079,14 +1078,10 @@
 
 .about-company-comment-content {
     display: flex;
-<<<<<<< HEAD
-=======
-
 }
 
 .about-company-comment-content.l-6 {
     display: flex;
->>>>>>> e0a5b63a9862cd67c119a956ee3288ad88dc2a21
 }
 
 .comment-content-img {
@@ -1556,7 +1551,8 @@
 }
 
 .house-detail h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 3.5rem;
 }
 
 .house-detail {
