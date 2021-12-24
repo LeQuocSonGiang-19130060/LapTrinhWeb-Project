@@ -1,5 +1,5 @@
 // NÚT QUAY VỀ ĐẦU TRANG
-window.onscroll = function() {
+window.onscroll = function () {
     scrollFunction()
 };
 
@@ -13,7 +13,7 @@ function scrollFunction() {
 }
 
 // CHUYỂN FORM LOGIN - RESGITER
-document.getElementById('myBtn').addEventListener("click", function() {
+document.getElementById('myBtn').addEventListener("click", function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
@@ -34,7 +34,7 @@ function login() {
 }
 
 // HEADER SCROLL
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
     var header = document.querySelector(".header");
     header.classList.toggle("sticky", window.scrollY > 0);
 })
@@ -101,11 +101,11 @@ function showSlides() {
 }
 
 
-$(document).ready(function() {
-    $(".navbar-btn").click(function() {
+$(document).ready(function () {
+    $(".navbar-btn").click(function () {
         $(".header__navbar-mobile").show();
     });
-    $(".ti-close").click(function() {
+    $(".ti-close").click(function () {
         $(".header__navbar-mobile").hide();
     });
 });
@@ -156,14 +156,15 @@ $(document).ready(function() {
 // }
 
 //handling event for search-txt, slider ad
-$(document).ready(function(){
-    $(".slider-ad").on({
-        focus: function(){
-            $(".search-txt").css({"width": "300px", "padding-left": "20px;"})
-            $(".search-btn").css({"width": "300px","padding-left": "20px;" })
-        },
-        blur: function (){
-            $(".search-txt").css("width","0")
-        }
-    })
-})
+// $(document).ready(function () {
+//     $(".search-txt").on({
+//         focus: function () {
+//             $(".search-txt").css({"width": "300px"})
+//             $(".search-btn").css({"cursor": "pointer", "background": "#ff5252"})
+//         },
+//         blur: function () {
+//             $(".search-txt").css("width", "0")
+//             $(".search-btn").css({"background": "var(--primary-color)"})
+//         }
+//     })
+// })
