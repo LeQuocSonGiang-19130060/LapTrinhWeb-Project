@@ -19,19 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- AOS ANIMATION -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $(".navbar-btn").click(function() {
-                $(".header__navbar-mobile").show();
-            });
-            $(".ti-close").click(function() {
-                $(".header__navbar-mobile").hide();
-            });
-        });
-    </script>
+   
 
 
 </head>
@@ -125,6 +113,7 @@
             <div class="navbar-btn" id="mobile-menu-btn">
                 <i class="ti-view-list"></i>
             </div>
+            
             <a href="./index.html">
                 <img src="./img/logo-dark.png" alt="" class="navbar__logo-img2">
             </a>
@@ -132,6 +121,9 @@
             <nav class="header__navbar-mobile" id="header-repon">
                 <i class="ti-close"></i>
                 <ul class="navbar-list-mobile">
+                    <li class="navbar-item-mobile">
+                        <button class="header__info-item-a navbar-item-a-mobile" onclick="show()">Đăng Nhập</button>
+                    </li>
                     <li class="navbar-item-mobile">
                         <a href="./index.html" class="navbar-item-a-mobile">Trang Chủ</a>
                     </li>
@@ -227,7 +219,7 @@
                                             <li class="list-room">4 P.Ngủ </li>
                                             <li class="list-room">2 P.Tắm</li>
                                         </ul>
-                                        <p class="buy-text">Bao gồm các studio và căn hộ 1 và 2 phòng ngủ có thiết kế lấy cảm hứng từ đô thị, vượt ra ngoài các bức tường của bạn và trong toàn bộ cộng đồng.</p>
+                                        <p class="buy-text">Bao gồm các studio và căn hộ 1 và 2 phòng ngủ có thiết kế lấy cảm hứng từ đô thị.</p>
                                     </div>
                                 </a>
                             </div>
@@ -245,7 +237,7 @@
                                             <li class="list-room">4 P.Ngủ </li>
                                             <li class="list-room">2 P.Tắm</li>
                                         </ul>
-                                        <p class="buy-text">Hãy tận hưởng niềm vui của bạn từ một vị trí thuận lợi có thể dễ dàng tiếp cận tất cả những gì tốt nhất của khu South Beach sôi động của thành phố.</p>
+                                        <p class="buy-text">Hãy tận hưởng niềm vui của bạn từ một vị trí thuận lợi có thể dễ dàng tiếp cận tất cả những gì tốt nhất của khu South Beach.</p>
                                     </div>
                                 </a>
                             </div>
@@ -278,7 +270,7 @@
                                             <li class="list-room">4 P.Ngủ</li>
                                             <li class="list-room">2 P.Tắm</li>
                                         </ul>
-                                        <p class="buy-text">Mang đến cơ hội duy nhất để sống trong khung cảnh công viên quốc gia và tận hưởng những khu dân cư yên tĩnh, vị trí thuận tiện, không gian thoáng đẹp.</p>
+                                        <p class="buy-text">Mang đến cơ hội duy nhất để sống và tận hưởng những khu dân cư yên tĩnh, vị trí thuận tiện, không gian thoáng đẹp.</p>
                                     </div>
                                 </a>
                             </div>

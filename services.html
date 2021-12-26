@@ -111,6 +111,9 @@
           <nav class="header__navbar-mobile" id="header-repon">
               <i class="ti-close"></i>
               <ul class="navbar-list-mobile">
+                <li class="navbar-item-mobile">
+                    <button class="header__info-item-a navbar-item-a-mobile" onclick="show()">Đăng Nhập</button>
+                </li>
                   <li class="navbar-item-mobile">
                       <a href="./index.html" class="navbar-item-a-mobile">Trang Chủ</a>
                   </li>
@@ -164,169 +167,120 @@
                 <div class="about-title-link"><a href="./index.html">Trang Chủ</a> / <span>Dịch Vụ</span></div>
             </div>
 
-            <div class="about-company">
-                <h1 class="buy-title"><span>Chào Mừng</span> Bạn Đến với Chúng Tôi</h1>
-             </div>
-                <!--ABOUT OVERVIEW -->
-                <div class="grid wide">
-                <div class="about-company-overview " >
-                    <img src="./img/about/aerial-view-business-data-analysis-graph_53876-13390.jpg" alt="" class="about-company-content-img" >
-                    <div class="about-company-content">
-                        <p class="about-company-content-text">
-                            Intense là một nguồn tài nguyên trực tuyến quốc gia dành cho các cá nhân đang tìm kiếm một căn hộ cho dù đó là ở trên phố hay trên toàn quốc. Để đơn giản hóa quá trình tìm kiếm một nơi ở mới, Intense cung cấp cho người thuê một trong những cơ sở dữ liệu toàn diện nhất về hàng triệu căn hộ trên khắp cả nước. Bằng cách kết hợp các sản phẩm phù hợp nhất để tiếp cận người thuê, bao gồm các tìm kiếm được cá nhân hóa, video giới thiệu qua video, đánh giá của cộng đồng, trang web đáp ứng và ứng dụng cho cả điện thoại iPhone và Android, Intense mang đến trải nghiệm đa phương tiện mà người thuê muốn đồng thời tạo quyền truy cập dễ dàng vào danh sách từ bất kỳ máy tính hoặc thiết bị di động.
-                        </p>
-                        <p class="about-company-content-text">
-                            Ngoài việc phục vụ khách thuê trên toàn quốc, Intense là điểm đến quảng cáo hàng đầu cho các chủ sở hữu và công ty quản lý bất động sản chuyên nghiệp, chủ nhà tư nhân và các trang rao vặt. Chúng tôi là công ty con của Tập đoàn CopSpor có trụ sở tại Washington, DC và cũng sở hữu trang web cho thuê Apartment Home Living.
-                        </p>
-                    </div>
+            <div class="about-content">
+                <div class="about-company">
+                    <h1 class="buy-title"><span>Chào Mừng</span> Bạn Đến với Chúng Tôi</h1>
                 </div>
-                </div>
-
-
-
-                <!-- @@@ -->
-                 <!-- TOOLS AND RESOURCES -->
-        <!-- <div class="parallax-sevices">
-            <div class="grid wide">
-                <div class="parallax-container-sevices ">
-                <h1 class="parallax-title">Dịch Vụ Của Chúng Tôi</h1>
-                    <div class="row">
-                        <div class="grid__coloum-4-1 parallax-item">
-                            <i class="parallax-icon ti-location-arrow"></i>
-                            <h2 class="services-title">MÔI GIỚI</h2>
-                            <p class="parallax-text">
-                                Các đại lý bất động sản của chúng tôi rất chuyên nghiệp trong mọi việc họ làm. Chỉ cần gọi đến văn phòng của chúng tôi hoặc liên hệ với đại lý mà bạn thích qua email hoặc hồ sơ xã hội của anh chị
+                    <!--ABOUT OVERVIEW -->
+                 <div class="grid wide">
+                    <div class="about-company-overview " >
+                        <img src="./img/about/aerial-view-business-data-analysis-graph_53876-13390.jpg" alt="" class="about-company-content-img" >
+                        <div class="about-company-content">
+                            <p class="about-company-content-text">
+                                Intense là một nguồn tài nguyên trực tuyến quốc gia dành cho các cá nhân đang tìm kiếm một căn hộ cho dù đó là ở trên phố hay trên toàn quốc. Để đơn giản hóa quá trình tìm kiếm một nơi ở mới, Intense cung cấp cho người thuê một trong những cơ sở dữ liệu toàn diện nhất về hàng triệu căn hộ trên khắp cả nước. Bằng cách kết hợp các sản phẩm phù hợp nhất để tiếp cận người thuê, bao gồm các tìm kiếm được cá nhân hóa, video giới thiệu qua video, đánh giá của cộng đồng, trang web đáp ứng và ứng dụng cho cả điện thoại iPhone và Android, Intense mang đến trải nghiệm đa phương tiện mà người thuê muốn đồng thời tạo quyền truy cập dễ dàng vào danh sách từ bất kỳ máy tính hoặc thiết bị di động.
+                            </p>
+                            <p class="about-company-content-text">
+                                Ngoài việc phục vụ khách thuê trên toàn quốc, Intense là điểm đến quảng cáo hàng đầu cho các chủ sở hữu và công ty quản lý bất động sản chuyên nghiệp, chủ nhà tư nhân và các trang rao vặt. Chúng tôi là công ty con của Tập đoàn CopSpor có trụ sở tại Washington, DC và cũng sở hữu trang web cho thuê Apartment Home Living.
                             </p>
                         </div>
-                      
-                        <div class="grid__coloum-4-1 parallax-item">
-                            <i class="parallax-icon ti-lock"></i>
-                            <h2 class="services-title">BẢO HIỂM TÀI SẢN</h2>
-                            <p class="parallax-text">Bạn có thể bảo hiểm tài sản của mình tại công ty chúng tôi ngay sau khi mua hoặc thuê. Chăm sóc cho sự an toàn của ngôi nhà và gia đình của bạn.</p>
-                        </div>
-                        
-                        <div class="grid__coloum-4-1 parallax-item">
-                            <i class="parallax-icon ti-home"></i>
-                            <h2 class="services-title">QUẢN LÝ TÀI SẢN</h2>
-                            <p class="parallax-text">Chúng tôi giải quyết các loại tài sản khác nhau. Bất kể bạn cần gì - một ngôi nhà, một căn hộ hay nhà để xe - bạn sẽ tìm thấy một lựa chọn tốt trên trang web của chúng tôi.</p>
-                        </div>
-                        
-                        <div class="grid__coloum-4-1 parallax-item">
-                            <i class="parallax-icon ti-comment-alt"></i>
-                            <h2 class="services-title">NHÀ BÁN VÀ CHO THUÊ</h2>
-                            <p class="parallax-text">Hiện tại bạn không có đủ tiền để mua nhà? Chúng tôi có cung cấp tốt cho cả thuê và mua. Vì vậy, mọi khách hàng sẽ hài lòng với dịch vụ của chúng tôi.</p>
-                        </div>
-                      
-                        <div class="grid__coloum-4-1 parallax-item">
-                            <i class="parallax-icon ti-car"></i>
-                            <h2 class="services-title">BÃI ĐẬU XE</h2>
-                            <p class="parallax-text">Bãi đậu xe của chúng tôi nằm trong bán kính 1 phút đi bộ từ các khu nhà mà chúng tôi cung cấp, và tất cả đều được trang bị bảo vệ 24/7.</p>
-                        </div>
-                        
-                        
-                        <div class="grid__coloum-4-1 parallax-item">
-                            <i class="parallax-icon ti-location-pin"></i>
-                            <h2 class="services-title">CÁC VỊ TRÍ THOẢI MÁI</h2>
-                            <p class="parallax-text">Các tài sản, căn hộ và nhà ở của chúng tôi đều nằm ở những vị trí thoải mái cho phép khách hàng của chúng tôi dễ dàng chọn được căn nhà phù hợp.</p>
-                        </div>
-                        
+                    </div>
+                </div>
+    
+                 <div class="parallax-ser">
+            <div class="tool-ser">
+                <div class="serBox">
+                    <div class="serIcon" style="--i:#4eb7ff">
+                        <i class="ti-location-arrow"></i>
+                    </div>
+                    <div class="serContent">
+                        <h2>MÔI GIỚI</h2>
+                        <p>
+                            Các đại lý bất động sản của chúng tôi rất chuyên nghiệp trong mọi việc họ làm. Chỉ cần gọi đến văn phòng của chúng tôi hoặc liên hệ với đại lý mà bạn thích qua email hoặc hồ sơ xã hội của anh chị
+                        </p>
+                    </div>
+                </div>
+                <div class="serBox">
+                    <div class="serIcon" style="--i:#fd6494">
+                        <i class=" ti-lock"></i>
+                    </div>
+                    <div class="serContent">
+                        <h2 >BẢO HIỂM TÀI SẢN</h2>
+                        <p >Bạn có thể bảo hiểm tài sản của mình tại công ty chúng tôi ngay sau khi mua hoặc thuê. Chăm sóc cho sự an toàn của ngôi nhà và gia đình của bạn.</p>
+                    </div>
+                </div>
+                <div class="serBox">
+                    <div class="serIcon" style="--i:#43f390">
+                    <i class="ti-home"></i>
+                    </div>
+                    <div class="serContent">
+                        <h2>QUẢN LÝ TÀI SẢN</h2>
+                        <p >Chúng tôi giải quyết các loại tài sản khác nhau. Bất kể bạn cần gì - một ngôi nhà, một căn hộ hay nhà để xe - bạn sẽ tìm thấy một lựa chọn tốt trên trang web của chúng tôi.</p>
+                    </div>
+                </div>
+                <div class="serBox">
+                    <div class="serIcon"style="--i:#ffb508">
+                    <i class="ti-comment-alt"></i>
+                    </div>
+                    <div class="serContent">
+                        <h2>NHÀ BÁN VÀ CHO THUÊ</h2>
+                        <p >Hiện tại bạn không có đủ tiền để mua nhà? Chúng tôi có cung cấp tốt cho cả thuê và mua. Vì vậy, mọi khách hàng sẽ hài lòng với dịch vụ của chúng tôi.</p>
+                    </div>
+                </div>
+                <div class="serBox">
+                    <div class="serIcon"style="--i:#37ba82">
+                    <i class="ti-car"></i>
+                    </div>
+                    <div class="serContent">
+                        <h2 >BÃI ĐẬU XE</h2>
+                        <p>Bãi đậu xe của chúng tôi nằm trong bán kính 1 phút đi bộ từ các khu nhà mà chúng tôi cung cấp, và tất cả đều được trang bị bảo vệ 24/7.</p>
+                    </div>
+                </div>
+                <div class="serBox">
+                    <div class="serIcon"style="--i:#cd57ff">
+                    <i class="ti-location-pin"></i>
+                    </div>
+                    <div class="serContent">
+                        <h2>CÁC VỊ TRÍ THOẢI MÁI</h2>
+                                <p>Các tài sản, căn hộ và nhà ở của chúng tôi đều nằm ở những vị trí thoải mái cho phép khách hàng của chúng tôi dễ dàng chọn được căn nhà phù hợp.</p>
                     </div>
                 </div>
             </div>
-        </div> -->
-    <div class="parallax-ser">
-        <div class="tool-ser">
-            <div class="serBox">
-                <div class="serIcon" style="--i:#4eb7ff">
-                    <i class="ti-location-arrow"></i>
                 </div>
-                <div class="serContent">
-                    <h2>MÔI GIỚI</h2>
-                    <p>
-                        Các đại lý bất động sản của chúng tôi rất chuyên nghiệp trong mọi việc họ làm. Chỉ cần gọi đến văn phòng của chúng tôi hoặc liên hệ với đại lý mà bạn thích qua email hoặc hồ sơ xã hội của anh chị
-                    </p>
-                </div>
-            </div>
-            <div class="serBox">
-                <div class="serIcon" style="--i:#fd6494">
-                    <i class=" ti-lock"></i>
-                </div>
-                <div class="serContent">
-                    <h2 >BẢO HIỂM TÀI SẢN</h2>
-                    <p >Bạn có thể bảo hiểm tài sản của mình tại công ty chúng tôi ngay sau khi mua hoặc thuê. Chăm sóc cho sự an toàn của ngôi nhà và gia đình của bạn.</p>
-                </div>
-            </div>
-            <div class="serBox">
-                <div class="serIcon" style="--i:#43f390">
-                <i class="ti-home"></i>
-                </div>
-                <div class="serContent">
-                    <h2>QUẢN LÝ TÀI SẢN</h2>
-                    <p >Chúng tôi giải quyết các loại tài sản khác nhau. Bất kể bạn cần gì - một ngôi nhà, một căn hộ hay nhà để xe - bạn sẽ tìm thấy một lựa chọn tốt trên trang web của chúng tôi.</p>
-                </div>
-            </div>
-            <div class="serBox">
-                <div class="serIcon"style="--i:#ffb508">
-                <i class="ti-comment-alt"></i>
-                </div>
-                <div class="serContent">
-                    <h2>NHÀ BÁN VÀ CHO THUÊ</h2>
-                    <p >Hiện tại bạn không có đủ tiền để mua nhà? Chúng tôi có cung cấp tốt cho cả thuê và mua. Vì vậy, mọi khách hàng sẽ hài lòng với dịch vụ của chúng tôi.</p>
-                </div>
-            </div>
-            <div class="serBox">
-                <div class="serIcon"style="--i:#37ba82">
-                <i class="ti-car"></i>
-                </div>
-                <div class="serContent">
-                    <h2 >BÃI ĐẬU XE</h2>
-                    <p>Bãi đậu xe của chúng tôi nằm trong bán kính 1 phút đi bộ từ các khu nhà mà chúng tôi cung cấp, và tất cả đều được trang bị bảo vệ 24/7.</p>
-                </div>
-            </div>
-            <div class="serBox">
-                <div class="serIcon"style="--i:#cd57ff">
-                <i class="ti-location-pin"></i>
-                </div>
-                <div class="serContent">
-                    <h2>CÁC VỊ TRÍ THOẢI MÁI</h2>
-                            <p>Các tài sản, căn hộ và nhà ở của chúng tôi đều nằm ở những vị trí thoải mái cho phép khách hàng của chúng tôi dễ dàng chọn được căn nhà phù hợp.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-             <!-- TESTIMONIALS -->
-             
-             <div class="services-comment">
-                 <h1 class="testmion-title">ĐÁNH GIÁ</h1>
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col l-4 m-4 c-12 about-company-comment-content">
-                            <div ><img src="./img/founder/user (6).jpg" alt="" class="comment-content-img"></div>
-                               <div class="comment-content-info">
-                                   <p class="comment-content-info-text">Tôi chỉ muốn nói lời cảm ơn vì dịch vụ nhanh chóng và hiệu quả của bạn, vì đội ngũ nhân viên hỗ trợ thân thiện và chuyên nghiệp của bạn! Tôi sẽ giới thiệu công ty chuyên gia của bạn cho tất cả bạn bè của tôi</p>
-                                   <h4 class="comment-content-info-name">-Pamela Hansen</h4>
+                 <!-- TESTIMONIALS -->
+                 
+                 <div class="services-comment">
+                     <h1 class="testmion-title">ĐÁNH GIÁ</h1>
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-4 m-4 c-12 about-company-comment-content">
+                                <div ><img src="./img/founder/user (6).jpg" alt="" class="comment-content-img"></div>
+                                   <div class="comment-content-info">
+                                       <p class="comment-content-info-text">Tôi chỉ muốn nói lời cảm ơn vì dịch vụ nhanh chóng và hiệu quả của bạn, vì đội ngũ nhân viên hỗ trợ thân thiện và chuyên nghiệp của bạn! Tôi sẽ giới thiệu công ty chuyên gia của bạn cho tất cả bạn bè của tôi</p>
+                                       <h4 class="comment-content-info-name">-Pamela Hansen</h4>
+                                   </div>
                                </div>
-                           </div>
-                           <div class="col l-4 m-4 c-12 about-company-comment-content">
-                            <div ><img src="./img/founder/user (5).jpg" alt="" class="comment-content-img"></div>
-                               <div class="comment-content-info">
-                                   <p class="comment-content-info-text">Wow, tôi rất hài lòng với dịch vụ của bạn. Bạn đã quản lý để vượt quá mong đợi của tôi! Các bạn làm việc rất hiệu quả và tôi sẽ giới thiệu nhiều người hơn đến công ty của bạn!</p>
-                                   <h4 class="comment-content-info-name">-Donald Webb</h4>
+                               <div class="col l-4 m-4 c-12 about-company-comment-content">
+                                <div ><img src="./img/founder/user (5).jpg" alt="" class="comment-content-img"></div>
+                                   <div class="comment-content-info">
+                                       <p class="comment-content-info-text">Wow, tôi rất hài lòng với dịch vụ của bạn. Bạn đã quản lý để vượt quá mong đợi của tôi! Các bạn làm việc rất hiệu quả và tôi sẽ giới thiệu nhiều người hơn đến công ty của bạn!</p>
+                                       <h4 class="comment-content-info-name">-Donald Webb</h4>
+                                   </div>
                                </div>
-                           </div>
-                           <div class="col l-4 m-4 c-12 about-company-comment-content">
-                            <div ><img src="./img/founder/user (4).jpg" alt="" class="comment-content-img"></div>
-                               <div class="comment-content-info">
-                                   <p class="comment-content-info-text">Tôi chỉ không biết làm thế nào để mô tả các dịch vụ của bạn ... Chúng thật phi thường! Tôi khá hài lòng với họ! Chỉ cần tiếp tục đi theo cách này!</p>
-                                   <h4 class="comment-content-info-name">-Donna Keller</h4>
+                               <div class="col l-4 m-4 c-12 about-company-comment-content">
+                                <div ><img src="./img/founder/user (4).jpg" alt="" class="comment-content-img"></div>
+                                   <div class="comment-content-info">
+                                       <p class="comment-content-info-text">Tôi chỉ không biết làm thế nào để mô tả các dịch vụ của bạn ... Chúng thật phi thường! Tôi khá hài lòng với họ! Chỉ cần tiếp tục đi theo cách này!</p>
+                                       <h4 class="comment-content-info-name">-Donna Keller</h4>
+                                   </div>
                                </div>
-                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
+           
 
        <!-- FOOTER -->
-       <footer class="footer">
+    <footer class="footer">
         <div class="grid wide">
             <div class="row">
                 <div class="col l-3 m-6 c-6">
@@ -403,6 +357,7 @@
         </div>
     </footer>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./assets/js/appfunction.js"></script>
 </body>
 

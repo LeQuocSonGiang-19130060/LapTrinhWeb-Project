@@ -14,56 +14,7 @@
     <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $(".js-company-item-over").click(function(){
-    $(".js-company-item-over").css("color", "var(--primary-color");
-    $(".js-company-item-soul").css("color", "#807e7e");
-    $(".js-company-item-team").css("color", "#807e7e");
-    $(".js-company-item-test").css("color", "#807e7e");
-
-    $(".about-company-overview").show();
-    $(".display-none-soulof").hide();
-    $(".display-none-team").hide();
-    $(".display-none-comment").hide();
-  });
-  $(".js-company-item-soul").click(function(){
-    $(".js-company-item-soul").css("color", "var(--primary-color");
-    $(".js-company-item-over").css("color", "#807e7e");
-    $(".js-company-item-team").css("color", "#807e7e");
-    $(".js-company-item-test").css("color", "#807e7e");
-
-    $(".display-none-soulof").show();
-    $(".about-company-overview").hide();
-    $(".display-none-team").hide();
-    $(".display-none-comment").hide();
-  });
-
-  $(".js-company-item-team").click(function(){
-    $(".js-company-item-team").css("color", "var(--primary-color");
-    $(".js-company-item-soul").css("color", "#807e7e");
-    $(".js-company-item-over").css("color", "#807e7e");
-    $(".js-company-item-test").css("color", "#807e7e");
-
-    $(".display-none-team").show();
-    $(".about-company-overview").hide();
-    $(".display-none-soulof").hide();
-    $(".display-none-comment").hide();
-  });
-  $(".js-company-item-test").click(function(){
-    $(".js-company-item-test").css("color", "var(--primary-color");
-    $(".js-company-item-soul").css("color", "#807e7e");
-    $(".js-company-item-team").css("color", "#807e7e");
-    $(".js-company-item-over").css("color", "#807e7e");
-
-    $(".display-none-comment").show();
-    $(".about-company-overview").hide();
-    $(".display-none-team").hide();
-    $(".display-none-soulof").hide();
-  });
-});
-</script>
+   
 </head>
 
 <body>
@@ -98,7 +49,6 @@ $(document).ready(function(){
 <div class="root">
     <div class="header">
         <button id="myBtn" title="Lên đầu trang"><i class="ti-arrow-up"></i></button>
-        <script src="./assets/js/appfunction.js"></script>
   <!-- HEADER -->
             <div class="header__info">
                 <ul class="header__info-list">
@@ -155,6 +105,9 @@ $(document).ready(function(){
           <nav class="header__navbar-mobile" id="header-repon">
               <i class="ti-close"></i>
               <ul class="navbar-list-mobile">
+                <li class="navbar-item-mobile">
+                    <button class="header__info-item-a navbar-item-a-mobile" onclick="show()">Đăng Nhập</button>
+                </li>
                   <li class="navbar-item-mobile">
                       <a href="./index.html" class="navbar-item-a-mobile">Trang Chủ</a>
                   </li>
@@ -209,249 +162,253 @@ $(document).ready(function(){
                 <div class="about-title-link"><a href="./index.html">Trang Chủ</a> / <span>Chúng Tôi</span></div>
             </div>
 
-            <div class="about-company">
-                <h1 class="about-company-title">Công Ty</h1>
-                <ul class="about-company-list">
-                    <li class="about-company-item ">
-                        <button href="" class="about-company-item1 about-company-item-a js-company-item-over">TỔNG QUÁT</button>
-                    </li>
-                    <li class="about-company-item">
-                        <button href="" class="about-company-item-a js-company-item-soul">NHÀ SÁNG LẬP</button>
-                    </li>
-                    <li class="about-company-item">
-                        <button href="" class="about-company-item-a js-company-item-team">TEAM</button>
-                    </li>
-                    <li class="about-company-item">
-                        <button href="" class="about-company-item-a js-company-item-test">ĐÁNH GIÁ</button>
-
-                    </li>
-                </ul>
-            </div>
-                <!-- OVERVIEW -->
+            <!-- ABOUT CONTENT -->
+            <div class="about-content">
+                <div class="about-company">
+                    <h1 class="about-company-title">Công Ty</h1>
+                    <ul class="about-company-list">
+                        <li class="about-company-item ">
+                            <button href="" class="about-company-item1 about-company-item-a js-company-item-over">TỔNG QUÁT</button>
+                        </li>
+                        <li class="about-company-item">
+                            <button href="" class="about-company-item-a js-company-item-soul">NHÀ SÁNG LẬP</button>
+                        </li>
+                        <li class="about-company-item">
+                            <button href="" class="about-company-item-a js-company-item-team">TEAM</button>
+                        </li>
+                        <li class="about-company-item">
+                            <button href="" class="about-company-item-a js-company-item-test">ĐÁNH GIÁ</button>
+    
+                        </li>
+                    </ul>
+                </div>
+                    <!-- OVERVIEW -->
                 <div class=" grid wide">
-                <div class="about-company-overview " >
-                    <div class="about-company-content">
-                        <p class="about-company-content-text">
-                            Intense là một Cơ quan Bất động sản quốc gia được thành lập vào năm 2006 tại Los Angeles. Công ty chúng tôi ban đầu được thiết kế để giúp những người đang tìm thuê hoặc căn hộ để bán. Hôm nay, chúng tôi cung cấp video giới thiệu hàng triệu căn hộ và nhà ở trên khắp đất nước cũng như truy cập miễn phí vào cơ sở dữ liệu của chúng tôi cho khách hàng của chúng tôi. Được trao giải “Cơ quan Bất động sản Sáng tạo nhất” vào năm 2012, Intense luôn nỗ lực để làm cho trải nghiệm nhà ở của bạn trở nên thoải mái nhất có thể. Chúng tôi quan tâm đến khách hàng của mình và giúp họ kiếm được nhiều tiền nhất cũng như sự thoải mái khi mua hàng. Hơn nữa, địa bàn hoạt động của chúng tôi bao gồm nhiều bang trên toàn quốc nên bạn hoàn toàn có thể yên tâm sẽ tìm được căn nhà ưng ý.
-                        </p>
-                        <p class="about-company-content-text">
-                            Các đại lý của chúng tôi hợp tác rộng rãi với các chủ sở hữu bất động sản chuyên nghiệp và các công ty kinh doanh tạo ra các cuộc gọi từ những khách hàng tiềm năng đang tìm kiếm bất động sản thương mại. Nhờ trang web của chúng tôi, nó có thể được thực hiện dễ dàng và nhanh chóng hơn bao giờ hết. Cho dù bạn là một cá nhân hay một đại diện doanh nghiệp, ở đây bạn sẽ tìm thấy tài sản bạn đang tìm kiếm và dịch vụ xứng đáng.
-                        </p>
-                    </div>
-                    <img src="./img/about/photo-1450101499163-c8848c66ca85.jpg" alt="" class="about-company-content-img" >
-
-                </div>
-                </div>
-
-            <!-- SOUL OF AGENCY  -->
-            <div class="display-none-soulof" style="display: none;">
-                <div class="about-company-soulof"  >
-                <div class="founder-info1">
-                    <img src="./img/founder/user9.jpg    " alt="" class="founder-img">
-                    <div class="founder-item">
-                    <span class="founder-name">Carl Bishop</span>
-                    <h3 class="souof-fouder">Nhà Sáng Lập</h3>
-                    <a href="" class="founder-phone">
-                        <i class="ti-mobile"></i>
-                        +84 191819</a>
-                    <a href="" class="founder-mail">
-                        <i class="ti-email"></i>
-                        CarlBishop@gmail.com</a>
+                    <div class="about-company-overview " >
+                        <div class="about-company-content">
+                            <p class="about-company-content-text">
+                                Intense là một Cơ quan Bất động sản quốc gia được thành lập vào năm 2006 tại Los Angeles. Công ty chúng tôi ban đầu được thiết kế để giúp những người đang tìm thuê hoặc căn hộ để bán. Hôm nay, chúng tôi cung cấp video giới thiệu hàng triệu căn hộ và nhà ở trên khắp đất nước cũng như truy cập miễn phí vào cơ sở dữ liệu của chúng tôi cho khách hàng của chúng tôi. Được trao giải “Cơ quan Bất động sản Sáng tạo nhất” vào năm 2012, Intense luôn nỗ lực để làm cho trải nghiệm nhà ở của bạn trở nên thoải mái nhất có thể. Chúng tôi quan tâm đến khách hàng của mình và giúp họ kiếm được nhiều tiền nhất cũng như sự thoải mái khi mua hàng. Hơn nữa, địa bàn hoạt động của chúng tôi bao gồm nhiều bang trên toàn quốc nên bạn hoàn toàn có thể yên tâm sẽ tìm được căn nhà ưng ý.
+                            </p>
+                            <p class="about-company-content-text">
+                                Các đại lý của chúng tôi hợp tác rộng rãi với các chủ sở hữu bất động sản chuyên nghiệp và các công ty kinh doanh tạo ra các cuộc gọi từ những khách hàng tiềm năng đang tìm kiếm bất động sản thương mại. Nhờ trang web của chúng tôi, nó có thể được thực hiện dễ dàng và nhanh chóng hơn bao giờ hết. Cho dù bạn là một cá nhân hay một đại diện doanh nghiệp, ở đây bạn sẽ tìm thấy tài sản bạn đang tìm kiếm và dịch vụ xứng đáng.
+                            </p>
+                        </div>
+                        <img src="./img/about/photo-1450101499163-c8848c66ca85.jpg" alt="" class="about-company-content-img" >
+    
                     </div>
                 </div>
-                <div class="souof-text">
-                <p class="souof-text1">
-                    Với hơn 10 năm kinh nghiệm trong lĩnh vực Bất động sản, Carl Bishop là một trong những đại lý nổi tiếng nhất khu vực hiện nay. Sự cống hiến chuyên nghiệp của anh ấy đã cho phép anh ấy thành lập công ty Intense bao gồm các kỹ năng của anh ấy trong việc bán và cho thuê bất động sản.
-                </p>
-                <p class="souof-text2">
-                    Tôi muốn tạo ra một công ty thành công có thể cho mọi người thuê thoải mái cũng như bán tài sản.
-                </p>
-                <p class="souof-text1">
-                    Phẩm chất lãnh đạo và kỹ năng quản lý tuyệt vời của ông đã giúp Carl Bishop phát triển Intense thành một mạng lưới các đại lý bất động sản có danh tiếng tốt. Ngày nay, ông Bishop quản lý công việc của các đại lý khác trong công ty của chúng tôi, kiểm soát công việc của họ và mức độ dịch vụ mà họ cung cấp cho khách hàng của chúng tôi.
-                </p>
+    
+                <!-- SOUL OF AGENCY  -->
+                <div class="display-none-soulof" style="display: none;">
+                    <div class="about-company-soulof"  >
+                    <div class="founder-info1">
+                        <img src="./img/founder/user9.jpg    " alt="" class="founder-img">
+                        <div class="founder-item">
+                        <span class="founder-name">Carl Bishop</span>
+                        <h3 class="souof-fouder">Nhà Sáng Lập</h3>
+                        <a href="" class="founder-phone">
+                            <i class="ti-mobile"></i>
+                            +84 191819</a>
+                        <a href="" class="founder-mail">
+                            <i class="ti-email"></i>
+                            CarlBishop@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="souof-text">
+                    <p class="souof-text1">
+                        Với hơn 10 năm kinh nghiệm trong lĩnh vực Bất động sản, Carl Bishop là một trong những đại lý nổi tiếng nhất khu vực hiện nay. Sự cống hiến chuyên nghiệp của anh ấy đã cho phép anh ấy thành lập công ty Intense bao gồm các kỹ năng của anh ấy trong việc bán và cho thuê bất động sản.
+                    </p>
+                    <p class="souof-text2">
+                        Tôi muốn tạo ra một công ty thành công có thể cho mọi người thuê thoải mái cũng như bán tài sản.
+                    </p>
+                    <p class="souof-text1">
+                        Phẩm chất lãnh đạo và kỹ năng quản lý tuyệt vời của ông đã giúp Carl Bishop phát triển Intense thành một mạng lưới các đại lý bất động sản có danh tiếng tốt. Ngày nay, ông Bishop quản lý công việc của các đại lý khác trong công ty của chúng tôi, kiểm soát công việc của họ và mức độ dịch vụ mà họ cung cấp cho khách hàng của chúng tôi.
+                    </p>
+                    </div>
+                    </div>
                 </div>
+    
+                    <!-- TEAM -->
+                <div class="display-none-team" style="display: none;">
+                        <div class="about-company-team">
+                            <div class="founder">
+                                <div class="grid wide">  
+                                    <div class="row">
+                                        <!-- TEAM 1 -->
+                                         <div class="col l-3 m-6 c-6 founder-info">
+                                            <img src="./img/team/p1.png" alt="" class="founder-img">
+                                           <div class="founder-item">
+                                            <span class="founder-name">Ashley Mason</span>
+                                            <a href="" class="founder-phone">
+                                                <i class="ti-mobile"></i>
+                                                +84 191819</a>
+                                            <a href="" class="founder-mail">
+                                                <i class="ti-email"></i>
+                                               Mason@gmail.com</a>
+                                            </div>
+                                        </div> 
+    
+                                        <!-- TEAM 2 -->
+                                        <div class="col l-3 m-6 c-6 founder-info">
+                                            <div class="fouder-image">
+                                                <img src="./img/team/p2.png" alt="" class="founder-img">
+                                            </div>
+                                            <div class="founder-item">
+                                             <span class="founder-name">Russell Myers</span>
+                                             <a href="" class="founder-phone">
+                                                 <i class="ti-mobile"></i>
+                                                 +84 191819</a>
+                                             <a href="" class="founder-mail">
+                                                 <i class="ti-email"></i>
+                                                 Myers@gmail.com</a>
+                                             </div>
+                                        </div> 
+            
+                                        <!-- TEAM 3 -->
+                                         <div class="col l-3 m-6 c-6 founder-info">
+                                            <img src="./img/team/p3.png" alt="" class="founder-img">
+                                            <div class="founder-item">
+                                             <span class="founder-name">Shirley Vasquez</span>
+                                             <a href="" class="founder-phone">
+                                                 <i class="ti-mobile"></i>
+                                                 +84 191819</a>
+                                             <a href="" class="founder-mail">
+                                                 <i class="ti-email"></i>
+                                                   Vasquez@gmail.com</a>
+                                             </div>
+                                        </div> 
+            
+                                        <!-- TEAM 4 -->
+                                         <div class="col l-3 m-6 c-6 founder-info">
+                                            <img src="./img/team/pexels-photo-9986396.jpeg" alt="" class="founder-img">
+                                            <div class="founder-item">
+                                             <span class="founder-name">Terry Sandoval</span>
+                                             <a href="" class="founder-phone">
+                                                 <i class="ti-mobile"></i>
+                                                 +84 191819</a>
+                                             <a href="" class="founder-mail">
+                                                 <i class="ti-email"></i>
+                                                 Sandoval@gmail.com</a>
+                                             </div>
+                                        </div> 
+            
+                                        <!-- TEAM 5 -->
+                                        <div class="col l-3 m-6 c-6 founder-info">
+                                            <img src="./img/team/p4.png" alt="" class="founder-img">
+                                           <div class="founder-item">
+                                            <span class="founder-name">Randy Schneider</span>
+                                            <a href="" class="founder-phone">
+                                                <i class="ti-mobile"></i>
+                                                +84 191819</a>
+                                            <a href="" class="founder-mail">
+                                                <i class="ti-email"></i>
+                                                Randy@gmail.com</a>
+                                            </div>
+                                        </div> 
+            
+                                          <!-- TEAM 6 -->
+                                         <div class="col l-3 m-6 c-6 founder-info">
+                                            <img src="./img/team/pexels-photo-10013224.jpeg" alt="" class="founder-img">
+                                            <div class="founder-item">
+                                             <span class="founder-name">Maria Georgel</span>
+                                             <a href="" class="founder-phone">
+                                                 <i class="ti-mobile"></i>
+                                                 +84 191819</a>
+                                             <a href="" class="founder-mail">
+                                                 <i class="ti-email"></i>
+                                                 Maria@gmail.com</a>
+                                             </div>
+                                        </div> 
+            
+                                        <!-- TEAM 7 -->
+                                        <div class="col l-3 m-6 c-6 founder-info">
+                                            <img src="./img/team/pexels-photo-10030258.jpeg" alt="" class="founder-img">
+                                            <div class="founder-item">
+                                             <span class="founder-name">Olivia Marshall</span>
+                                             <a href="" class="founder-phone">
+                                                 <i class="ti-mobile"></i>
+                                                 +84 191819</a>
+                                             <a href="" class="founder-mail">
+                                                 <i class="ti-email"></i>
+                                                 Olivia@gmail.com</a>
+                                             </div>
+                                        </div> 
+            
+                                        <!-- TEAM 8 -->
+                                         <div class="col l-3 m-6 c-6 founder-info">
+                                             <div class="fouder-image">
+                                                 <img src="./img/team/pexels-photo-9995662.jpeg" alt="" class="founder-img">
+                                             </div>
+                                            <div class="founder-item">
+                                             <span class="founder-name">Samantha Nelson</span>
+                                             <a href="" class="founder-phone">
+                                                 <i class="ti-mobile"></i>
+                                                 +84 191819</a>
+                                             <a href="" class="founder-mail">
+                                                 <i class="ti-email"></i>
+                                                 Samantha@gmail.com</a>
+                                             </div>
+                                        </div> 
+                                    </div>
+                                </div>              
+                            </div>
+                        </div>
+                </div>
+    
+                 <!-- TESTIMONIALS -->
+                 <div class="display-none-comment" style="display: none;">
+                    <div class="about-company-comment">
+                        <div class="grid wide">
+                            <div class="row">
+                               <div class="col l-6 m-12 c-12 about-company-comment-content">
+                                <div ><img src="./img/founder/user (1).jpg" alt="" class="comment-content-img"></div>
+                                   <div class="comment-content-info">
+                                       <p class="comment-content-info-text">
+                                           Cảm ơn bạn đã phản hồi nhanh chóng và sự giúp đỡ mà bạn đã cho tôi. Bạn luôn có một giải pháp nhanh chóng cho mọi vấn đề. Thật là một mức độ dịch vụ khách hàng tuyệt vời</p>
+                                       <h4 class="comment-content-info-name">-Lisa Evans</h4>
+                                   </div>
+                               </div>
+                               <div class="col l-6 m-12 c-12 about-company-comment-content">
+                                <div ><img src="./img/founder/user (8).jpg" alt="" class="comment-content-img"></div>
+                                   <div class="comment-content-info">
+                                       <p class="comment-content-info-text">Tôi chỉ muốn cảm ơn vì sự giúp đỡ của bạn. Tôi rất hài lòng và biết ơn. hãy luôn làm tốt như vậy nhé! Trang web của bạn cung cấp sự hỗ trợ tốt nhất mà tôi từng gặp.</p>
+                                       <h4 class="comment-content-info-name">-Nicholas Lane</h4>
+                                   </div>
+                               </div>
+                               <div class="col l-6 m-12 c-12 about-company-comment-content">
+                                <div ><img src="./img/founder/user (7).jpg" alt="" class="comment-content-img"></div>
+                                   <div class="comment-content-info">
+                                       <p class="comment-content-info-text">Cảm ơn bạn rất nhiều vì phản hồi nhanh chóng của bạn. Không nghi ngờ gì nữa, công ty của bạn rất đáng để ngưỡng mộ! Tôi đã trải nghiệm hỗ trợ nhanh nhất từ ​​trước đến nay. ort bao giờ hết. Cảm ơn bạn một nghìn</p>
+                                       <h4 class="comment-content-info-name">-Ethan Dean</h4>
+                                   </div>
+                               </div>
+                               <div class="col l-6 m-12 c-12 about-company-comment-content">
+                                <div ><img src="./img/founder/user (6).jpg" alt="" class="comment-content-img"></div>
+                                   <div class="comment-content-info">
+                                       <p class="comment-content-info-text">Tôi chỉ muốn nói lời cảm ơn vì dịch vụ nhanh chóng và hiệu quả của bạn, vì đội ngũ nhân viên hỗ trợ thân thiện và chuyên nghiệp của bạn! Tôi sẽ giới thiệu công ty chuyên gia của bạn cho tất cả bạn bè của tôi</p>
+                                       <h4 class="comment-content-info-name">-Pamela Hansen</h4>
+                                   </div>
+                               </div>
+                               <div class="col l-6 m-12 c-12 about-company-comment-content">
+                                <div ><img src="./img/founder/user (5).jpg" alt="" class="comment-content-img"></div>
+                                   <div class="comment-content-info">
+                                       <p class="comment-content-info-text">Wow, tôi rất hài lòng với dịch vụ của bạn. Bạn đã quản lý để vượt quá mong đợi của tôi! Các bạn làm việc rất hiệu quả và tôi sẽ giới thiệu nhiều người hơn đến công ty của bạn!</p>
+                                       <h4 class="comment-content-info-name">-Donald Webb</h4>
+                                   </div>
+                               </div>
+                               <div class="col l-6 m-12 c-12 about-company-comment-content">
+                                <div ><img src="./img/founder/user (4).jpg" alt="" class="comment-content-img"></div>
+                                   <div class="comment-content-info">
+                                       <p class="comment-content-info-text">Tôi chỉ không biết làm thế nào để mô tả các dịch vụ của bạn ... Chúng thật phi thường! Tôi khá hài lòng với họ! Chỉ cần tiếp tục đi theo cách này!</p>
+                                       <h4 class="comment-content-info-name">-Donna Keller</h4>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-                <!-- TEAM -->
-                <div class="display-none-team" style="display: none;">
-                    <div class="about-company-team">
-                        <div class="founder">
-                            <div class="grid wide">  
-                                <div class="row">
-                                    <!-- TEAM 1 -->
-                                     <div class="col l-3 m-6 c-6 founder-info">
-                                        <img src="./img/team/p1.png" alt="" class="founder-img">
-                                       <div class="founder-item">
-                                        <span class="founder-name">Ashley Mason</span>
-                                        <a href="" class="founder-phone">
-                                            <i class="ti-mobile"></i>
-                                            +84 191819</a>
-                                        <a href="" class="founder-mail">
-                                            <i class="ti-email"></i>
-                                           Mason@gmail.com</a>
-                                        </div>
-                                    </div> 
-
-                                    <!-- TEAM 2 -->
-                                    <div class="col l-3 m-6 c-6 founder-info">
-                                        <div class="fouder-image">
-                                            <img src="./img/team/p2.png" alt="" class="founder-img">
-                                        </div>
-                                        <div class="founder-item">
-                                         <span class="founder-name">Russell Myers</span>
-                                         <a href="" class="founder-phone">
-                                             <i class="ti-mobile"></i>
-                                             +84 191819</a>
-                                         <a href="" class="founder-mail">
-                                             <i class="ti-email"></i>
-                                             Myers@gmail.com</a>
-                                         </div>
-                                    </div> 
-        
-                                    <!-- TEAM 3 -->
-                                     <div class="col l-3 m-6 c-6 founder-info">
-                                        <img src="./img/team/p3.png" alt="" class="founder-img">
-                                        <div class="founder-item">
-                                         <span class="founder-name">Shirley Vasquez</span>
-                                         <a href="" class="founder-phone">
-                                             <i class="ti-mobile"></i>
-                                             +84 191819</a>
-                                         <a href="" class="founder-mail">
-                                             <i class="ti-email"></i>
-                                               Vasquez@gmail.com</a>
-                                         </div>
-                                    </div> 
-        
-                                    <!-- TEAM 4 -->
-                                     <div class="col l-3 m-6 c-6 founder-info">
-                                        <img src="./img/team/pexels-photo-9986396.jpeg" alt="" class="founder-img">
-                                        <div class="founder-item">
-                                         <span class="founder-name">Terry Sandoval</span>
-                                         <a href="" class="founder-phone">
-                                             <i class="ti-mobile"></i>
-                                             +84 191819</a>
-                                         <a href="" class="founder-mail">
-                                             <i class="ti-email"></i>
-                                             Sandoval@gmail.com</a>
-                                         </div>
-                                    </div> 
-        
-                                    <!-- TEAM 5 -->
-                                    <div class="col l-3 m-6 c-6 founder-info">
-                                        <img src="./img/team/p4.png" alt="" class="founder-img">
-                                       <div class="founder-item">
-                                        <span class="founder-name">Randy Schneider</span>
-                                        <a href="" class="founder-phone">
-                                            <i class="ti-mobile"></i>
-                                            +84 191819</a>
-                                        <a href="" class="founder-mail">
-                                            <i class="ti-email"></i>
-                                            Randy@gmail.com</a>
-                                        </div>
-                                    </div> 
-        
-                                      <!-- TEAM 6 -->
-                                     <div class="col l-3 m-6 c-6 founder-info">
-                                        <img src="./img/team/pexels-photo-10013224.jpeg" alt="" class="founder-img">
-                                        <div class="founder-item">
-                                         <span class="founder-name">Maria Georgel</span>
-                                         <a href="" class="founder-phone">
-                                             <i class="ti-mobile"></i>
-                                             +84 191819</a>
-                                         <a href="" class="founder-mail">
-                                             <i class="ti-email"></i>
-                                             Maria@gmail.com</a>
-                                         </div>
-                                    </div> 
-        
-                                    <!-- TEAM 7 -->
-                                    <div class="col l-3 m-6 c-6 founder-info">
-                                        <img src="./img/team/pexels-photo-10030258.jpeg" alt="" class="founder-img">
-                                        <div class="founder-item">
-                                         <span class="founder-name">Olivia Marshall</span>
-                                         <a href="" class="founder-phone">
-                                             <i class="ti-mobile"></i>
-                                             +84 191819</a>
-                                         <a href="" class="founder-mail">
-                                             <i class="ti-email"></i>
-                                             Olivia@gmail.com</a>
-                                         </div>
-                                    </div> 
-        
-                                    <!-- TEAM 8 -->
-                                     <div class="col l-3 m-6 c-6 founder-info">
-                                         <div class="fouder-image">
-                                             <img src="./img/team/pexels-photo-9995662.jpeg" alt="" class="founder-img">
-                                         </div>
-                                        <div class="founder-item">
-                                         <span class="founder-name">Samantha Nelson</span>
-                                         <a href="" class="founder-phone">
-                                             <i class="ti-mobile"></i>
-                                             +84 191819</a>
-                                         <a href="" class="founder-mail">
-                                             <i class="ti-email"></i>
-                                             Samantha@gmail.com</a>
-                                         </div>
-                                    </div> 
-                                </div>
-                            </div>              
-                        </div>
-                    </div>
-                </div>
-
-             <!-- TESTIMONIALS -->
-             <div class="display-none-comment" style="display: none;">
-                <div class="about-company-comment">
-                    <div class="grid wide">
-                        <div class="row">
-                           <div class="col l-6 m-12 c-12 about-company-comment-content">
-                            <div ><img src="./img/founder/user (1).jpg" alt="" class="comment-content-img"></div>
-                               <div class="comment-content-info">
-                                   <p class="comment-content-info-text">
-                                       Cảm ơn bạn đã phản hồi nhanh chóng và sự giúp đỡ mà bạn đã cho tôi. Bạn luôn có một giải pháp nhanh chóng cho mọi vấn đề. Thật là một mức độ dịch vụ khách hàng tuyệt vời</p>
-                                   <h4 class="comment-content-info-name">-Lisa Evans</h4>
-                               </div>
-                           </div>
-                           <div class="col l-6 m-12 c-12 about-company-comment-content">
-                            <div ><img src="./img/founder/user (8).jpg" alt="" class="comment-content-img"></div>
-                               <div class="comment-content-info">
-                                   <p class="comment-content-info-text">Tôi chỉ muốn cảm ơn vì sự giúp đỡ của bạn. Tôi rất hài lòng và biết ơn. hãy luôn làm tốt như vậy nhé! Trang web của bạn cung cấp sự hỗ trợ tốt nhất mà tôi từng gặp.</p>
-                                   <h4 class="comment-content-info-name">-Nicholas Lane</h4>
-                               </div>
-                           </div>
-                           <div class="col l-6 m-12 c-12 about-company-comment-content">
-                            <div ><img src="./img/founder/user (7).jpg" alt="" class="comment-content-img"></div>
-                               <div class="comment-content-info">
-                                   <p class="comment-content-info-text">Cảm ơn bạn rất nhiều vì phản hồi nhanh chóng của bạn. Không nghi ngờ gì nữa, công ty của bạn rất đáng để ngưỡng mộ! Tôi đã trải nghiệm hỗ trợ nhanh nhất từ ​​trước đến nay. ort bao giờ hết. Cảm ơn bạn một nghìn</p>
-                                   <h4 class="comment-content-info-name">-Ethan Dean</h4>
-                               </div>
-                           </div>
-                           <div class="col l-6 m-12 c-12 about-company-comment-content">
-                            <div ><img src="./img/founder/user (6).jpg" alt="" class="comment-content-img"></div>
-                               <div class="comment-content-info">
-                                   <p class="comment-content-info-text">Tôi chỉ muốn nói lời cảm ơn vì dịch vụ nhanh chóng và hiệu quả của bạn, vì đội ngũ nhân viên hỗ trợ thân thiện và chuyên nghiệp của bạn! Tôi sẽ giới thiệu công ty chuyên gia của bạn cho tất cả bạn bè của tôi</p>
-                                   <h4 class="comment-content-info-name">-Pamela Hansen</h4>
-                               </div>
-                           </div>
-                           <div class="col l-6 m-12 c-12 about-company-comment-content">
-                            <div ><img src="./img/founder/user (5).jpg" alt="" class="comment-content-img"></div>
-                               <div class="comment-content-info">
-                                   <p class="comment-content-info-text">Wow, tôi rất hài lòng với dịch vụ của bạn. Bạn đã quản lý để vượt quá mong đợi của tôi! Các bạn làm việc rất hiệu quả và tôi sẽ giới thiệu nhiều người hơn đến công ty của bạn!</p>
-                                   <h4 class="comment-content-info-name">-Donald Webb</h4>
-                               </div>
-                           </div>
-                           <div class="col l-6 m-12 c-12 about-company-comment-content">
-                            <div ><img src="./img/founder/user (4).jpg" alt="" class="comment-content-img"></div>
-                               <div class="comment-content-info">
-                                   <p class="comment-content-info-text">Tôi chỉ không biết làm thế nào để mô tả các dịch vụ của bạn ... Chúng thật phi thường! Tôi khá hài lòng với họ! Chỉ cần tiếp tục đi theo cách này!</p>
-                                   <h4 class="comment-content-info-name">-Donna Keller</h4>
-                               </div>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>             
+                        
         </div>
 
 
@@ -534,6 +491,58 @@ $(document).ready(function(){
         </div>
     </footer>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".js-company-item-over").click(function(){
+    $(".js-company-item-over").css("color", "var(--primary-color");
+    $(".js-company-item-soul").css("color", "#807e7e");
+    $(".js-company-item-team").css("color", "#807e7e");
+    $(".js-company-item-test").css("color", "#807e7e");
+
+    $(".about-company-overview").show();
+    $(".display-none-soulof").hide();
+    $(".display-none-team").hide();
+    $(".display-none-comment").hide();
+  });
+  $(".js-company-item-soul").click(function(){
+    $(".js-company-item-soul").css("color", "var(--primary-color");
+    $(".js-company-item-over").css("color", "#807e7e");
+    $(".js-company-item-team").css("color", "#807e7e");
+    $(".js-company-item-test").css("color", "#807e7e");
+
+    $(".display-none-soulof").show();
+    $(".about-company-overview").hide();
+    $(".display-none-team").hide();
+    $(".display-none-comment").hide();
+  });
+
+  $(".js-company-item-team").click(function(){
+    $(".js-company-item-team").css("color", "var(--primary-color");
+    $(".js-company-item-soul").css("color", "#807e7e");
+    $(".js-company-item-over").css("color", "#807e7e");
+    $(".js-company-item-test").css("color", "#807e7e");
+
+    $(".display-none-team").show();
+    $(".about-company-overview").hide();
+    $(".display-none-soulof").hide();
+    $(".display-none-comment").hide();
+  });
+  $(".js-company-item-test").click(function(){
+    $(".js-company-item-test").css("color", "var(--primary-color");
+    $(".js-company-item-soul").css("color", "#807e7e");
+    $(".js-company-item-team").css("color", "#807e7e");
+    $(".js-company-item-over").css("color", "#807e7e");
+
+    $(".display-none-comment").show();
+    $(".about-company-overview").hide();
+    $(".display-none-team").hide();
+    $(".display-none-soulof").hide();
+  });
+});
+</script>
+<script src="./assets/js/appfunction.js"></script>
+
 </body>
 
 </html>

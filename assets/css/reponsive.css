@@ -51,13 +51,15 @@
     position: relative;
     width: calc(100% - 400px);
     padding: 40px;
-    padding-left: 0;
     border-radius: 0;
     margin-left: 0;
     height: 400px;
   }
   .confirm-catalog{
     margin: 20px 0;
+  }
+  .slideshow-container img{
+    height: 200px;
   }
 }
 
@@ -87,9 +89,7 @@
   .layout-contact-wrapper {
     display: none;
   }
-  .about-title-link {
-    display: block;
-  }
+
   .about-company-item{
     padding: 0;
     margin-left: 0;
@@ -126,5 +126,26 @@
   .select button{
     width: 200px;
   }
-
+  .buy-list{
+    padding: 0 30px;
+  }
+  .buy-item-price{
+    right: 30px;
+  }
+  .about-company-soulof{
+    width: 100%;
+  }
+  .experience{
+    padding: 0 2rem;
+    
+  }
+  .detail{
+    padding: 0 2rem;
+  }
+  .about-content{
+    padding: 0 2rem;
+  }
+  .footer{
+    padding: 0 2rem;
+  }
 }

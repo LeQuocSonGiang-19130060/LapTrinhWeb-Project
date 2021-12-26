@@ -35,13 +35,3 @@ a{
     text-align: center;
     font-size: 3.6rem;
 }
-@keyframes title{
-    from{
-      transform: scale(1);
-    }
-    
-    50%{
-      transform: scale(1.2);
-    }
-    
-} 

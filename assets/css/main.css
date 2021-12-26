@@ -347,9 +347,7 @@
     color: var(--primary-color);
 }
 
-.buy-title:hover {
-    animation: title 1.25s infinite;
-}
+
 
 .buy-img {
     margin-top: 40px;
@@ -1760,7 +1758,7 @@
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 99;
+    z-index: 999;
     display: none;
 }
 
