@@ -1,6 +1,6 @@
 let dateCheckinElement
 let dateCheckoutElement
-// date
+    // date
 let dateCheckin
 let dateCheckout
 let titleDateCheckin = document.querySelector('#checkin-title')
@@ -29,9 +29,9 @@ const month_names = ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5',
 
 let month_picker = document.querySelector('.month-picker');
 month_picker.onclick = () => {
-    month_list.classList.add('show');
-}
-//GENETATE CALENDAR
+        month_list.classList.add('show');
+    }
+    //GENETATE CALENDAR
 generateCalendar = (month, year) => {
     let calendar_days = document.querySelector('.calendar-days');
     calendar_days.innerHTML = ''
@@ -102,8 +102,8 @@ document.querySelector('#next-year').onclick = () => {
     generateCalendar(currMon.value, currYear.value)
 }
 let currDate = new Date();
-let currMon = {value: currDate.getMonth()}
-let currYear = {value: currDate.getFullYear()}
+let currMon = { value: currDate.getMonth() }
+let currYear = { value: currDate.getFullYear() }
 generateCalendar(currMon.value, currYear.value)
 
 // Hide or show calendar
@@ -217,15 +217,15 @@ buttonCloseCelendar.onclick = () => {
 }
 
 buttonDeleteDateSelect.onclick = () => {
-    dateCheckin = undefined
-    dateCheckout = undefined
-    dateCheckinElement = undefined
-    dateCheckoutElement = undefined
-    generateCalendar(currMon.value, currYear.value)
-    updateTitle()
-    changeTitleButtonChecking()
-}
-//order customer
+        dateCheckin = undefined
+        dateCheckout = undefined
+        dateCheckinElement = undefined
+        dateCheckoutElement = undefined
+        generateCalendar(currMon.value, currYear.value)
+        updateTitle()
+        changeTitleButtonChecking()
+    }
+    //order customer
 document.querySelector('.customer .s').onclick = () => {
     document.querySelector('.customer-order').classList.toggle('show')
     if (document.querySelector('.customer-order').classList.contains('show')) {
@@ -256,10 +256,16 @@ document.querySelector('.book-room-submit').onclick = () => {
 
 changeTitleButtonChecking = () => {
     if (dateCheckout !== undefined && dateCheckin !== undefined) {
-        document.querySelector('.book-room-submit-btn').innerText = 'Đặt phòng'
+        let buttonSubmit = document.querySelector('.book-room-submit-btn')
+        buttonSubmit.innerText = 'Đặt phòng'
         let priceOnTime = document.querySelector('.priceOnTime')
         while (priceOnTime.hasChildNodes()) {
             priceOnTime.removeChild(priceOnTime.firstChild);
+        }
+        buttonSubmit.onclick = function() {
+            console.log("hehehehe")
+            location.assign('../../confirm.html');
+
         }
         createElementDetail()
     } else {
@@ -282,7 +288,7 @@ changeTitleButtonChecking = () => {
 createElementDetail = () => {
     let headerPrice = document.querySelector('.book-room-header-price>span')
     let timeOrder = lessTime()
-    // Price on Time
+        // Price on Time
     let priceOnTime = document.querySelector('.priceOnTime')
 
     let elementTimeSPAN = document.createElement("span")

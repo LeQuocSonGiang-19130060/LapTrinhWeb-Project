@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/css/cssforbookroom.css">
+
 
     <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
@@ -65,7 +67,7 @@
                         <button class="header__info-item-a" onclick="show()">Đăng Nhập</button>
                     </li>
                     <li class="header__info-item">
-                        <button  class="header__info-item-a" onclick="show()">Đăng Kí</button>
+                        <button class="header__info-item-a" onclick="show()">Đăng Kí</button>
                     </li>
                 </ul>
                 <ul class="header__info-list">
@@ -399,7 +401,7 @@
                                     </div>
                                 </div>
                                 <div class="book-room-submit">
-                                    <button class="book-room-submit-btn">Kiểm tra tình trạng còn phòng</button>
+                                    <button type="button" class="book-room-submit-btn">Kiểm tra tình trạng còn phòng</button>
                                 </div>
 
                             </div>
@@ -536,11 +538,11 @@
     </div>
 
     <script>
-        $(document).ready(function () {
-            $(".navbar-btn").click(function () {
+        $(document).ready(function() {
+            $(".navbar-btn").click(function() {
                 $(".header__navbar-mobile").show();
             });
-            $(".ti-close").click(function () {
+            $(".ti-close").click(function() {
                 $(".header__navbar-mobile").hide();
             });
         });
