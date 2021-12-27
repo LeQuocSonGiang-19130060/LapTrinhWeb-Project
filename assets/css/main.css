@@ -718,7 +718,9 @@
     height: 480px;
     display: flex;
     /* padding-bottom: 20px; */
-    background: linear-gradient(315deg, #fff 0%, var(--primary-color) 94%);
+    /* background: linear-gradient(315deg, #fff 0%, var(--primary-color) 94%); */
+    background-color: #faf361;
+background-image: linear-gradient(90deg, #faf361 0%, #b81cf7 100%);
 }
 
 .person {
@@ -1744,7 +1746,9 @@
     position: relative;
     width: 300px;
     height: 250px;
-    background-color: #fd7272;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    margin: 20px 0;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -1792,12 +1796,13 @@
 
 .tool-ser .serBox .serContent h2 {
     margin: 10px 0 5px 0;
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 .tool-ser .serBox .serContent p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3rem;
+    line-height: 2rem;
 }
 
 
