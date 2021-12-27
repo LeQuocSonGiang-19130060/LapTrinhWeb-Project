@@ -98,15 +98,24 @@ function showSlides(n) {
 
 }
 
-
-$(document).ready(function () {
-    $(".navbar-btn").click(function () {
-        $(".header__navbar-mobile").show();
-    });
-    $(".ti-close").click(function () {
-        $(".header__navbar-mobile").hide();
-    });
-});
+//
+// $(document).ready(function () {
+//     $(".navbar-btn").click(function () {
+//         $(".header__navbar-mobile").show();
+//         // $(".navbar-list-mobile").removeClass("hidden");
+//         // $(".header__navbar-mobile").addClass("hidden");
+//     });
+//     $(".ti-close").click(function () {
+//         $(".header__navbar-mobile").hide();
+//     });
+//
+//     //for show, hide navbar
+//     $("#header-repon").click(function (){
+//         $(".header__navbar-mobile").hide();
+//         // $(".header__navbar-mobile").addClass("hidden");
+//         // $(".navbar-list-mobile").addClass("hidden");
+//     });
+// });
 
 // // Hide Menu on on scroll down
 // var didScroll;
@@ -166,3 +175,4 @@ $(document).ready(function () {
 //         }
 //     })
 // })
+

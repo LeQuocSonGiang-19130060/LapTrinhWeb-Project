@@ -149,3 +149,8 @@
     padding: 0 2rem;
   }
 }
+@media (max-width: 400px) {
+  .navbar-btn {
+    right: 10%;
+  }
+}
