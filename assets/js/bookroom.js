@@ -264,7 +264,7 @@ changeTitleButtonChecking = () => {
         }
         buttonSubmit.onclick = function() {
             console.log("hehehehe")
-            location.assign('/../../confirm.html');
+            location.assign('./confirm.html');
 
         }
         createElementDetail()
