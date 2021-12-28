@@ -55,50 +55,49 @@
     margin-left: 0;
     height: 400px;
   }
-  .confirm-catalog{
+  .confirm-catalog {
     margin: 20px 0;
   }
-  .slideshow-container img{
+  .slideshow-container img {
     height: 200px;
   }
 }
 
 @media (max-width: 950px) {
-  .navbar-list{
+  .navbar-list {
     display: none;
   }
-  .header__info{
+  .header__info {
     display: none;
   }
-  .header{
+  .header {
     height: 60px;
   }
-
 }
 
 @media (max-width: 770px) {
-  .buy-item-price{
+  .buy-item-price {
     right: 0;
   }
-  
-  .buy-title{
+
+  .buy-title {
     font-size: 2.2rem;
   }
   .layout-contact-wrapper {
     display: none;
   }
 
-  .about-company-item{
+  .about-company-item {
     padding: 0;
     margin-left: 0;
   }
   .about-img-name {
     font-size: 3.6rem;
   }
-  .souof-text{
+  .souof-text {
     margin: 0;
   }
-  .souof-text2{
+  .souof-text2 {
     padding-left: 0;
   }
   /* CONTACT */
@@ -115,44 +114,42 @@
     height: auto;
     padding: 20px;
   }
-  .select{
+  .select {
     flex-direction: column;
   }
-  .select-option{
+  .select-option {
     margin: 10px 0;
   }
-  .select button{
+  .select button {
     width: 200px;
   }
-  .buy-list{
+  .buy-list {
     padding: 0 30px;
   }
-  .buy-item-price{
+  .buy-item-price {
     right: 30px;
   }
-  .about-company-soulof{
+  .about-company-soulof {
     width: 100%;
   }
-  .experience{
-    padding: 0 2rem;
-    
-  }
-  .detail{
+  .experience {
     padding: 0 2rem;
   }
-  .about-content{
+  .detail {
     padding: 0 2rem;
   }
-  .footer{
+  .about-content {
+    padding: 0 2rem;
+  }
+  .footer {
     padding: 0 2rem;
   }
 }
 @media (max-width: 400px) {
   .navbar-btn {
     right: 10%;
-
   }
-  .static-txt{
+  .static-txt {
     font-size: 3rem;
   }
 }
