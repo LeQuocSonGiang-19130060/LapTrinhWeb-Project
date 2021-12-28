@@ -73,9 +73,7 @@
   .header{
     height: 60px;
   }
-  #sg-book-room{
-    margin: 20px 0;
-  }
+
 }
 
 @media (max-width: 770px) {
@@ -152,5 +150,6 @@
 @media (max-width: 400px) {
   .navbar-btn {
     right: 10%;
+
   }
 }
