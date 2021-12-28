@@ -152,4 +152,7 @@
     right: 10%;
 
   }
+  .static-txt{
+    font-size: 3rem;
+  }
 }
